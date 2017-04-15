@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
-  </head>
-  <body>
-    // создаём раздел  главная шапка
-    <header class="main-header">
-    // выделяем содержимое в блок для центровки
-      <div class="container">
-    // создаём подраздел  логотип шапки
-        <div class="header-logo">
-          <a href="#">
-             <img src="#" alt="Барбершоп «Бородинский»">
-           </a>
-     //  создаём подраздел   главного меню навигации по сайту
-        </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      // сроздаём подраздел  пользовательского блока
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп «Бородинский»</title>
+</head>
+
+<body>
+  <!--создаём раздел  главная шапка -->
+  <header class="main-header">
+    <!-- выделяем содержимое в блок для центровки -->
+    <div class="container">
+      <!-- создаём подраздел  логотип шапки -->
+      <div class="header-logo">
+        <a href="#">
+          <img src="#" alt="Барбершоп «Бородинский»">
+        </a>
+        <!-- создаём подраздел   главного меню навигации по сайту -->
       </div>
-    </header>
-    // создаём раздел содержимого страницы
-    <main class="container">
-      <h1>Средства для ухода<h1>
-    // создаём меню навигации хебные крошки ( не знаю выдялять или нет в отдельный блок?)
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- сроздаём подраздел  пользовательского блока -->
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <!-- создаём раздел содержимого страницы -->
+  <main class="container">
+    <header class="title-navigation" <h1>Средства для ухода</h1>
+      <!-- создаём меню навигации хебные крошки -->
       <ul class="breadcrumbs">
         <li>
           <a href="#">Главная</a>
@@ -53,138 +55,176 @@
           <a href="#">Магазин</a>
         </li>
         <li>
-          <a href="#">Средства для ухода</a>
+          <span>Средства для ухода</span>
         </li>
       </ul>
-     // создаём  блок   с  формой выбора товара  ()не знаю  возможно просто форму оставить без блока?)
-      <div class="form-selection">
-         <form class="selection" action="#" method="post">
-      //  формы  чекбокса
-            <div class="checkbox-area">
-              <b>Производители:</b>
-              <br>
-              <label>
-                <input type="checkbox" name="BAXTER OF CALIFORNIA">
-                BAXTER OF CALIFORNIA
-               </label>
-              <br>
-              <label>
-                <input type="checkbox" name="MR NATTY">
-                MR NATTY
-              </label>
-              <br>
-              <label>
-                <input type="checkbox" name="SUAVECITO">
-                SUAVECITO
-              </label>
-              <br>
-              <label>
-                <input type="checkbox" name="MALIN+GOETZ">
-                MALIN+GOETZ
-              </label>
-              <br>
-              <label>
-              <input type="checkbox" name="MURRAYS">
-              MURRAYS
-              </label>
-              <br>
-              <label>
-                <input type="checkbox" name="AMERICAN CREW">
-                AMERICAN CREW
-              </label>
-              <br>
+    </header>
+    <!-- создаём  блок   левая колонка  -->
+    <div class="sidebar-left">
+      <!-- создаём формы  чекбокса -->
+      <div class="filter-item">
+        <form class="filter-form" action="#" method="post">
+          <div class="filter-checkbox">
+            <h3>Производители:</h3>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="BAXTER OF CALIFORNIA">
+              <label for="BAXTER OF CALIFORNIA">BAXTER OF CALIFORNIA</label>
             </div>
-      //  создаём  радио кнопки
-            <div class="product-groups">
-              <b>Группы товаров:</b>
-              <br>
-              <label>
-              <input type="radio" name="product-groups" value="british">
-              Бритвенные принадлежности
-              </label>
-              <br>
-              <label>
-              <input type="radio" name="product-groups" value="arsenal">
-              Средства для ухода
-              </label>
-              <br>
-              <label>
-              <input type="radio" name="product-groups" value="accessories">
-              Аксессуары
-              </label>
-              <br>
-              <button class="btn" type="submit">Показать</button>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="MR NATTY">
+              <label for="MR NATTY">MR NATTY</label>
             </div>
-          </form>
-      </div>
-      //  создаём блок  каталог товаров
-      <div class="catalog-item">
-       // выделяем в нём  шесть разделов с товарами
-        <article class="item">
-          <img src="#" alt="Набор для путешествий">
-          <p>Набор для путешествий<br>BAXTER OF CALIFORNIA</p>
-          <b>2900 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item">
-          <img src="#" alt="Увлажняющий кондиционер">
-          <p>Увлажняющий кондиционер<br>BAXTER OF CALIFORNIA</p>
-          <b>750 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item">
-          <img src="#" alt="Гель для волос">
-          <p>Гель для волос<br>SUAVECITO</p>
-          <b>290 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item">
-          <img src="#" alt="Глина для укладки волос">
-          <p>Глина для укладки волос<br>AMERICAN CREW</p>
-          <b>500 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item">
-          <img src="#" alt="Гель для волос">
-          <p>Гель для волос<br>AMERICAN CREW</p>
-          <b>300 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-        <article class="item">
-          <img src="#" alt="Набор для бритья">
-          <p>Набор для путешествий<br>BAXTER OF CALIFORNIA</p>
-          <b>3900 р.</b>
-          <a class="btn" href="#">Купить</a>
-        </article>
-   //  создаём блок с ссылками на другие страницы с товарами
-          <div class="catalog">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="SUAVECITO">
+              <label for="SUAVECITO">SUAVECITO</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="MALIN+GOETZ">
+              <label for="BMALIN+GOETZ">MALIN+GOETZ</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="MURRAYS">
+              <label for="BMURRAYS">MURRAYS</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" name="BAXTER OF CALIFORNIA" id="AMERICAN CREW">
+              <label for="AMERICAN CREW">AMERICAN CREW</label>
+            </div>
           </div>
+          <!-- создаём  радио кнопки -->
+          <div class="filter-manufacturers">
+            <h3>Группы товаров:</h3>
+            <div class="filter-manufacturers-groups">
+              <input type="radio" name="product-groups" value="british" id="british">
+              <label for="british">Бритвенные принадлежности</label>
+            </div>
+            <div class="filter-manufacturers-groups">
+              <input type="radio" name="product-groups" value="arsenal" id="arsenal">
+              <label for="arsenal">Средства для ухода</label>
+            </div>
+            <div class="filter-manufacturers-groups">
+              <input type="radio" name="product-groups" value="accessories" id="accessories">
+              <label for="accessories">Аксессуары</label>
+            </div>
+          </div>
+          <button class="btn" type="submit">Показать</button>
+        </form>
       </div>
-    </main>
-    // создаём раздел содержимого подвала ( аналог  разобран на лекции)
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+    </div>
+    <!-- создаём блок  каталог товаров -->
+    <div class="catalog-item">
+      <!-- выделяем в нём  блок каталог  -->
+      <div class="catalog-item">
+        <article class="item">
+          <!--изображение товара — это ссылка на страницу товара.-->
+          <a href="">
+            <img src="#" alt="Набор для путешествий">
+          </a>
+          <!--название товара — это ссылка на страницу товара
+            (название состоит из двух строк, но по сути является одним блоком).  -->
+          <div class="catalog-name-item">
+            <span>Набор для путешествий</span>
+            <span>BAXTER OF CALIFORNIA</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>2900 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item">
+          <a href="">
+            <img src="#" alt="Увлажняющий кондиционер">
+          </a>
+          <div class="catalog-name-item">
+            <span>Увлажняющий кондиционер</span>
+            <span>BAXTER OF CALIFORNIA</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>750 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item">
+          <a href="">
+            <img src="#" alt="Гель для волос">
+          </a>
+          <div class="catalog-name-item">
+            <span>Гель для волос</span>
+            <span>SUAVECITO</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>290 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item">
+          <a href="">
+            <img src="#" alt="Глина для укладки волос">
+          </a>
+          <div class="catalog-name-item">
+            <span>Глина для укладки волос</span>
+            <span>AMERICAN CREW</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>500 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item">
+          <a href="">
+            <img src="#" alt="Гель для волос">
+          </a>
+          <div class="catalog-name-item">
+            <span>Гель для волос</span>
+            <span>AMERICAN CREW</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>300 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
+        <article class="item">
+          <a href="">
+            <img src="#" alt="Набор для бритья">
+          </a>
+          <div class="catalog-name-item">
+            <span>Набор для бритья</span>
+            <span>BAXTER OF CALIFORNIA</span>
+          </div>
+          <div class="catalog-prise-item">
+            <span>3900 р.</span>
+            <a class="btn" href="#">Купить</a>
+          </div>
+        </article>
       </div>
-    </footer>
-  </body>
+      <!--создаём блок с ссылками на другие страницы с товарами -->
+      <div class="paginator">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+      </div>
+    </div>
+  </main>
+  <!-- создаём раздел содержимого подвала ( аналог  разобран на лекции) -->
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+
 </html>
