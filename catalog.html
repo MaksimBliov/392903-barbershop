@@ -64,8 +64,8 @@
       <!-- создаём формы  чекбокса -->
       <div class="filter-item">
         <form class="filter-form" action="#" method="post">
-          <div class="filter-checkbox">
-            <h3>Производители:</h3>
+          <fieldset class="filter-checkbox">
+            <legend>Производители:</legend>
             <div class="checkbox-item">
               <input type="checkbox" name="BAXTER OF CALIFORNIA" id="BAXTER OF CALIFORNIA">
               <label for="BAXTER OF CALIFORNIA">BAXTER OF CALIFORNIA</label>
@@ -90,10 +90,10 @@
               <input type="checkbox" name="AMERICAN CREW" id="AMERICAN CREW">
               <label for="AMERICAN CREW">AMERICAN CREW</label>
             </div>
-          </div>
+          </fieldset>
           <!-- создаём  радио кнопки -->
-          <div class="filter-manufacturers">
-            <h3>Группы товаров:</h3>
+          <fieldset class="filter-manufacturers">
+            <legend>Группы товаров:</legend>
             <div class="filter-manufacturers-groups">
               <input type="radio" name="product-groups" value="british" id="british">
               <label for="british">Бритвенные принадлежности</label>
@@ -106,7 +106,7 @@
               <input type="radio" name="product-groups" value="accessories" id="accessories">
               <label for="accessories">Аксессуары</label>
             </div>
-          </div>
+          </fieldset>
           <button class="btn" type="submit">Показать</button>
         </form>
       </div>
